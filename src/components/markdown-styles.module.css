@@ -1,0 +1,18 @@
+.markdown {
+  @apply text-lg leading-normal;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-4 font-thin tracking-wide;
+}
+
+.markdown h2 {
+  @apply text-2xl mt-10 mb-4 leading-snug tracking-wider;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug tracking-wider;
+}
