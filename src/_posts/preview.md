@@ -5,7 +5,7 @@ coverImage: '/assets/preview/cover.jpg'
 date: '2023-03-18T05:35:07.322Z'
 darken: true
 author:
-  name: Joe Haddad
+  name: Matheus Jacks
   picture: '/assets/authors/joe.jpeg'
 ---
 

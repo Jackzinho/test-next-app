@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import Layout from "@/components/layout";
 import PostPreview from "@/components/post-preview";
 import Post from "@/interfaces/post";
@@ -10,6 +11,7 @@ type Props = {
 const Posts = ({ posts }: Props) => {
   return (
     <Layout>
+      <Header />
       <section className="mt-12">
         <h2 className="mx-auto w-fit mb-12 text-4xl font-medium tracking-wide">
           All Posts

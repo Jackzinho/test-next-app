@@ -26,23 +26,31 @@ const Index = ({ posts }: Props) => {
           A statically generated blog made with Next.js and Tailwind CSS
         </h4>
       </section>
+
       <section className="mb-8">
         <MainPost key={mainPost.slug} {...mainPost} />
       </section>
+
       <div className="relative">
         <hr className="h-0 absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 border-outline-light/20 dark:border-primary-container-dark/20 w-screen" />
       </div>
+
       <section className="mt-20 mb-8">
         <h2 className="mx-auto w-fit mb-12 text-4xl font-medium tracking-wide">
           Other Posts
         </h2>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 lg:grid grid-flow-col grid-cols-2 grid-rows-2 lg:gap-8">
           {otherPosts.map((post) => {
-            return <PostPreview key={post.slug} {...post} />;
+            return (
+              <div key={post.slug} className="lg:basis-1/2">
+                <PostPreview {...post} />
+              </div>
+            );
           })}
         </div>
       </section>
+
       {morePosts && (
         <>
           <div className="relative">

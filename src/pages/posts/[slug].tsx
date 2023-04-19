@@ -1,14 +1,14 @@
+import AuthorInfo from "@/components/author-info";
+import DateFormatter from "@/components/date-formatter";
+import Header from "@/components/header";
+import ImageDarkener from "@/components/image-darkener";
+import PostContent from "@/components/post-content";
 import ErrorPage from "next/error";
 import { useRouter } from "next/router";
 import Layout from "../../components/layout";
 import type PostType from "../../interfaces/post";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
-import ImageDarkener from "@/components/image-darkener";
-import AuthorInfo from "@/components/author-info";
-import DateFormatter from "@/components/date-formatter";
-import PostContent from "@/components/post-content";
-import Link from "next/link";
 
 type Props = {
   post: PostType;
@@ -23,9 +23,7 @@ const Post = ({ post }: Props) => {
 
   return (
     <Layout>
-      <section className="mb-10">
-        <Link className="text-2xl font-bold tracking-widest text-primary-light dark:text-primary-dark hover:underline" href={"/"}>Home</Link>
-      </section>
+      <Header />
       <section>
         <div className="flex justify-between items-center mb-6">
           <AuthorInfo author={post.author} />

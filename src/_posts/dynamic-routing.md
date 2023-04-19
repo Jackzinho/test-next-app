@@ -5,7 +5,7 @@ coverImage: '/assets/dynamic-routing/cover.jpg'
 date: '2023-03-16T05:35:07.322Z'
 darken: true
 author:
-  name: JJ Kasper
+  name: Matheus Jacks
   picture: '/assets/authors/joe.jpeg'
 ---
 
